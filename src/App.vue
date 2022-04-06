@@ -1,10 +1,12 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <router-view></router-view>
 </template>
+
+<script>
+export default {
+  name: "App",
+};
+</script>
 
 <style>
 #app {
@@ -14,17 +16,52 @@
   text-align: center;
   color: #2c3e50;
 }
-
-nav {
-  padding: 30px;
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url("./assets/background-img.jpg");
+}
+.logo {
+  width: 100px;
+}
+.register input {
+  width: 320px;
+  height: 40px;
+  padding-left: 20px;
+  display: block;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid turquoise;
+}
+.register button {
+  width: 320px;
+  height: 40px;
+  margin-bottom: 30px;
+  border: 1px solid turquoise;
+  background: turquoise;
+  color: white;
+  cursor: pointer;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.login input {
+  width: 320px;
+  height: 40px;
+  padding-left: 20px;
+  display: block;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid turquoise;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+.login button {
+  width: 320px;
+  height: 40px;
+  margin-bottom: 30px;
+  border: 1px solid turquoise;
+  background: turquoise;
+  color: white;
+  cursor: pointer;
 }
 </style>
